@@ -7,14 +7,14 @@ use Illuminate\Http\Request;
 class productoscontroller extends Controller
 {
     public function index(){
-        return "seccion de prodcutos";
+        return view("productos.index");
     }
 
     public function create(){
         return "carrito activo";
     }
 
-    public function show($product){
-        return "el producto es $product";
-    }
+     public function show($prod){
+        return view("productos.show", compact("prod"));
+    } 
 }

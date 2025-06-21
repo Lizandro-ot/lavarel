@@ -10,7 +10,7 @@ use App\http\Controllers\productoscontroller;
 Route::get('/', indexcontroller::class);
 
 //--------declaracionde  rutas fijas--------//
-Route::get('/productos',[productoscontroller::class, "index"]);
+/*Route::get('/productos',[productoscontroller::class, "index"]);
 
 //--------declaracion de parametros fijos-----///
 Route::get('productos/crear',[productoscontroller::class, "create"]);
@@ -33,3 +33,15 @@ Route::get('prueba_parametros/{id}', function ($id) {
     $nombre = explode("-",$d);
     return "tu nombre es $nombre[1]";
 });
+*/
+Route::controller(productoscontroller::class)->group(function(){
+    
+
+    Route::get('/productos',"index");
+    Route::get('/productos/crear',"create");
+    Route::get('/productos/{prod}',"show");
+    Route::get('/', function () {
+    
+});
+
+
