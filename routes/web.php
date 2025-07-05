@@ -1,47 +1,31 @@
 <?php
-
 use Illuminate\Support\Facades\Route;
-use App\http\Controllers\indexcontroller;
-use App\http\Controllers\productoscontroller;
 
-//Route::get('/', function () {
-//    return view('welcome');
-//});
-Route::get('/', indexcontroller::class);
-
-//--------declaracionde  rutas fijas--------//
-/*Route::get('/productos',[productoscontroller::class, "index"]);
-
-//--------declaracion de parametros fijos-----///
-Route::get('productos/crear',[productoscontroller::class, "create"]);
-
-Route::get('productos/{product}',[productoscontroller::class, "show"]);
-
-
-//--------- declaracion de tutas fijas------//
-Route::get('productos',function(){
-    return "Seccion de productos";
+Route::get('/', function(){ 
+    return view('incio');
 });
 
-//-------declaracion de parametros--------//
-Route::get('productos/{id}',function ($id){
-    return  "Bienvenidos $id";
+Route::get('/hoteles', function(){ 
+    return view('hoteles');
 });
 
-Route::get('prueba_parametros/{id}', function ($id) {
-    $d = $id;
-    $nombre = explode("-",$d);
-    return "tu nombre es $nombre[1]";
+Route::get('/hotelesiii', function(){ 
+    return '<div class="carousel-container">
+          <div class="carousel-slide">
+            <img src="fotos\hotel 2.webp" alt="Hotel de lujo en la playa">
+          </div>
+          <div class="carousel-slide">
+            <img src="fotos\hoteles-en-puebla-azultalavera.webp" alt="Hotel urbano moderno">
+          </div>
+          <div class="carousel-slide">
+            <img src="fotos\hotel 3.jpg" alt="Resort en la montaña">
+          </div>
+        </div>
+        <button class="prev-btn" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next-btn" onclick="moveSlide(1)">&#10095;</button>
+      </section>';
 });
-*/
-Route::controller(productoscontroller::class)->group(function(){
-    
 
-    Route::get('/productos',"index");
-    Route::get('/productos/crear',"create");
-    Route::get('/productos/{prod}',"show");
-    Route::get('/', function () {
-    
-});
+?>
 
 
