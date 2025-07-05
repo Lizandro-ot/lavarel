@@ -12,7 +12,7 @@
         <div class="content">
             <div class="menu container">
                 <a href="proyecto.html" class="logo">
-                    <img src="logo.png" width="90px" height="70px" alt="">
+                    <img src="{{ asset('resources/img/logo.png')}}" width="90px" height="70px" alt="">
                 </a>
                   
                 <nav class="navbar">

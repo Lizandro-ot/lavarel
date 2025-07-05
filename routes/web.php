@@ -2,7 +2,7 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function(){ 
-    return view('incio');
+    return view("inicio");
 });
 
 Route::get('/hoteles', function(){ 
