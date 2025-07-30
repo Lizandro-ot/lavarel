@@ -1,6 +1,6 @@
 @extends('plantillaPag.plantilla')
 
-@section('title','cancun')
+@section('title','puerto')
 
 @section('contenido')
     <link rel="stylesheet" href="{{ asset('proyecto.css')}}">
@@ -9,71 +9,69 @@
 
 <body>
     <header>
-        
-        <h1>hoteles de Cancun</h1>
+        <h1>hoteles de Puerto Vallarta</h1>
         <div class="hoteles">
             <div class="album">
-                <img src="{{ asset('img\cancun\emporio cancun.jpg')}}" alt="">
+                <img src="{{ asset('img\puerto vallarta\dreams vallarta.jpeg')}}" alt="">
                 <button class="boton">
-                   <a href="https://hotelesemporio.com/hoteles/emporio-cancun/">Hotel Emporio</a>
+                   <a href="https://www.hyattinclusivecollection.com/es/resorts-y-hoteles/dreams/mexico/vallarta-bay-resort-spa/?gad_source=1&gclid=CjwKCAjwwLO_BhB2EiwAx2e-33qhMPQv5lb7ely1lYmFG2gy4MSriuc0pYK3ktodI6FFCvbDzWDn9RoCX0YQAvD_BwE">Dream vallarta</a>
                 </button>
                 <button class="boton">
                     <a href="reservaciones.html">Reservar</a>
                 </button>
                 <button class="boton">
-                    <a href="https://maps.app.goo.gl/Qw9FZL5TZj1WJLSp7">Mapa</a>
+                    <a href="https://maps.app.goo.gl/BYCtMgFWEZ86GPet5">Mapa</a>
                 </button>
             </div>
             <div class="album">
-                <img src="{{ asset('img\cancun\residence inn.jpg')}}" alt="">
+                <img src="{{ asset('img\puerto vallarta\krystal.jpeg')}}" alt="">
                 <button class="boton">
-                   <a href="https://www.marriott.com/es/hotels/cunri-residence-inn-cancun-hotel-zone/overview/">Residence inn </a>
+                   <a href="https://es.krystalgrand-nuevovallarta.com/?partner=1996&cp=SPRING10&gad_source=1&gclid=CjwKCAjwwLO_BhB2EiwAx2e-37Y3Cn5O-L-J7_FVLZVBBlhCPtHriGRPl02LQmmWy6F-_fFfsIQwMhoCv_8QAvD_BwE">Krystal Vallarta </a>
                 </button>
                 <button class="boton">
                     <a href="reservaciones.html">Reservar</a>
                 </button>
                 <button class="boton">
-                    <a href="https://maps.app.goo.gl/oDeacuTfCsPyeQYE8">Mapa</a>
+                    <a href="https://maps.app.goo.gl/hrybMjE9Hq9MAB8G6">Mapa</a>
                 </button>
             </div>
             <div class="album">
-                <img src="{{ asset('img\cancun\the westin resort.jpg')}}" alt="">
+                <img src="{{ asset('img\puerto vallarta\villartasol.jpeg')}}" alt="">
                 <button class="boton">
-                   <a href="https://www.guestreservations.com/es/the-westin-resort-spa-cancun-cancun/booking?utm_source=google&utm_medium=cpc&utm_campaign=21828508204&gad_source=1&gclid=Cj0KCQjwkZm_BhDrARIsAAEbX1FUR_w-AIDeDND9AKxtUjvsqsQPVF5oBKC1x4FD_oAAXdwDKLLjPt4aAq7LEALw_wcB&ctTriggered=true">The westin resort </a>
+                   <a href="https://www.vallartasol.com.mx/?gad_source=1&gclid=CjwKCAjwwLO_BhB2EiwAx2e-3_jWrRbiDymQEx7JeZJ7lSGHJSuyK6nM89fWOpuYXXhPzBb9SbKzjRoCLzQQAvD_BwE">Vallartasol Hotel </a>
                 </button>
                 <button class="boton">
                     <a href="reservaciones.html">Reservar</a>
                 </button>
                 <button class="boton">
-                    <a href="">Mapa</a>
+                    <a href="https://maps.app.goo.gl/oYct5t5PGi5yAVwx7">Mapa</a>
                 </button>
             </div>
             <div class="album">
-                <img src="{{ asset('img\cancun\selina.jpeg')}}" alt="">
+                <img src="{{ asset('img\puerto vallarta\tropicana.avif')}}" alt="">
                 <button class="boton">
-                   <a href="https://www.selina.mx/destinos/cancun-zh">Selina cancun </a>
+                   <a href="https://www.tropicanavallarta.com/">Hotel tropicana </a>
                 </button>
                 <button class="boton">
                     <a href="reservaciones.html">Reservar</a>
                 </button>
                 <button class="boton">
-                    <a href="https://maps.app.goo.gl/zZPzVqWsKfjtKar9A">Mapa</a>
+                    <a href="https://maps.app.goo.gl/K3VQ9HPh7a7gsmEx7">Mapa</a>
                 </button>
             </div>
             <div class="album">
-                <img src="{{ asset('img\cancun\hardrock.jpeg')}}" alt="">
+                <img src="{{ asset('img\puerto vallarta\crown.jpeg')}}" alt="">
                 <button class="boton">
-                   <a href="https://hotel.hardrock.com/cancun/es/">Hard Rock Hotel Cancun</a>
+                   <a href="https://pvg.crownparadise.com.mx/?utm_source=google_search&utm_medium=cpc&utm_campaign=amadeus_brand&gad_source=1&gclid=CjwKCAjwwLO_BhB2EiwAx2e-3zb8_BCdMsSkcaxFWbC1hQRxw6B7HUoPO4NL9_qjgMbwm90_T35CRxoCHqYQAvD_BwE&gclsrc=aw.ds">Crown Paradise Golden</a>
                 </button>
                 <button class="boton">
                     <a href="reservaciones.html">Reservar</a>
                 </button>
                 <button class="boton">
-                    <a href="https://maps.app.goo.gl/ZsTmVbm9H1KMugmC8">Mapa</a>
+                    <a href="https://maps.app.goo.gl/n7u3wQ3jh6XM2EMC7">Mapa</a>
                 </button>
             </div>
         </div>
     </header>
-    
 </body>
 @endsection

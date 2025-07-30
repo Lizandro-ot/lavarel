@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>@yield('title', 'Hoteles')</title>
+    <link rel="stylesheet" href="{{ asset('proyecto.css')}}">
+    <link rel="stylesheet" href="{{ asset('menu.css')}}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 <body>
     <!--se creo un menu, donde se quedara estatico es una plantilla-->
@@ -12,14 +16,14 @@
         <div class="content">
             <div class="menu container">
                 <a href="proyecto.html" class="logo">
-                    <img src="{{ asset('resources/img/logo.png')}}" width="90px" height="70px" alt="">
+                    <img src="{{ asset('img/logo.png')}}" width="90px" height="70px" alt="">
                 </a>
                   
                 <nav class="navbar">
                     <ul>
-                        <li><a href="{{url('/hotelesiii')}}">Inicio</a></li>
-                        <li><a href="hoteles.html">Hoteles</a></li>
-                        <li><a href="reservaciones.html">Reservaciones </a></li>  
+                        <li><a href="{{ route('inicio') }}">inicio</a></li>
+                        <li><a href="{{ route('hoteles') }}">hoteles</a></li>
+                        <li><a href="{{ route('registro.store') }}">registro</a></li>
                         
                     </ul>
                 </nav>

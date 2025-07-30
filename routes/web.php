@@ -1,30 +1,39 @@
 <?php
 use Illuminate\Support\Facades\Route;
-
-Route::get('/', function(){ 
-    return view("inicio");
-});
+use App\Http\Controllers\RegistroController;
 
 Route::get('/hoteles', function(){ 
     return view('hoteles');
-});
+})->name('hoteles');
 
-Route::get('/hotelesiii', function(){ 
-    return '<div class="carousel-container">
-          <div class="carousel-slide">
-            <img src="fotos\hotel 2.webp" alt="Hotel de lujo en la playa">
-          </div>
-          <div class="carousel-slide">
-            <img src="fotos\hoteles-en-puebla-azultalavera.webp" alt="Hotel urbano moderno">
-          </div>
-          <div class="carousel-slide">
-            <img src="fotos\hotel 3.jpg" alt="Resort en la montaña">
-          </div>
-        </div>
-        <button class="prev-btn" onclick="moveSlide(-1)">&#10094;</button>
-        <button class="next-btn" onclick="moveSlide(1)">&#10095;</button>
-      </section>';
-});
+Route::get('/inicio', function(){ 
+    return view('inicio');
+})->name('inicio');;
+
+Route::get('/cancun', function(){ 
+    return view('cancun');
+})->name('cancun');
+
+Route::get('/puerto', function(){ 
+    return view('puerto');
+})->name('puerto');
+
+Route::get('/acapulco', function(){ 
+    return view('acapulco');
+})->name('acapulco');
+
+Route::get('/huatulco', function(){ 
+    return view('huatulco');
+})->name('huatulco');
+
+Route::get('/veracruz', function(){ 
+    return view('veracruz');
+})->name('veracruz');
+
+
+Route::get('/registro', [RegistroController::class, 'create']);
+Route::post('/registro', [RegistroController::class, 'store'])->name('registro.store');
+
 
 ?>
 
